@@ -1,0 +1,154 @@
+.hide {
+    display: none !important;
+}
+
+:root {
+
+    --Cor-Primaria: #090e22;
+    --Text-color: #ffffff;
+    --Cor-Secundaria: #1d1e33;
+    --Btn-Limpar: #444;
+    --Btn-Calcular: #f44236;
+}
+
+*{
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--Text-color);
+    font-weight: lighter;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: var(--Cor-Primaria);
+}
+
+.Container {
+    padding: 2rem;
+    background-color: var(--Cor-Secundaria);
+    width: 30%;
+}
+
+/* Tela 1*/
+#Tela-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 2.5%;
+    margin: 5px;
+    outline: none;
+    color: #1d1e33;
+}
+
+.Aviso {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--Btn-Calcular);
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+button{
+    width: 45%;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+#Calcular {
+    background-color: var(--Btn-Calcular);
+}
+
+#Limpar {
+    background-color: var(--Btn-Limpar);
+}   
+
+/* Tela 2*/
+
+#Tela-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Titulo{
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+.SubTitulo{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.Situação{
+    font-size: 1rem;
+}
+
+.Tabela {
+    width: 100%;
+    margin: 1.5rem 0;
+    font-size: .8rem;
+}
+
+.Header-Tabela,
+.Data-Tabela {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--Btn-Limpar);
+    text-align: center;
+}
+
+.Header-Tabela h4,
+.Data-Tabela p {
+    flex: 1;
+}
+
+#Voltar{
+    width: 45%;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    text-shadow: none;
+    background-color: var(--Btn-Calcular);
+}
+
+/* Classes de Auxilio */
+
+.Good {
+    color: lightgreen;
+}
+
+.Medium{
+    color: orange;
+}
+
+.Bad {
+    color: #f44236;
+}

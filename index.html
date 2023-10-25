@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Scripts.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="" id="Tela-1">
+            <h1> Calculadora de <span> IMC </span> </h1>
+            <label> Altura: </label>
+            <input 
+            id="Altura"
+            placeholder="1.75 M"
+            type="number">
+            <label> Peso: </label>
+            <input 
+            id="Peso"
+            placeholder="75 Kg"
+            type="number">
+
+            <h1 class="Aviso" id="Digite">  </h1>
+
+            <div class="buttons">
+                <button id="Calcular">
+                    Calcular
+                </button>
+    
+                <button id="Limpar">
+                    Limpar
+                </button>
+            </div>
+        </div>
+        <div class="hide" id="Tela-2">
+            <h1 class="Titulo"> Seu IMC: <span class=""> 20.5 </span> </h1>
+            <h2 class="SubTitulo"> Situação Atual Sobrepeso </h2>
+            <h3 class="Situação"> Confira as classificações</h3>
+            <div class="Tabela">
+                <div class="Header-Tabela">
+                    <h4> IMC </h4>
+                    <h4> Classificação </h4>
+                    <h4> Obesidade </h4>
+                </div>
+                <div class="Data-Tabela">
+                    <p> Menor que 18.5 </p>
+                    <p> Magreza </p>
+                    <p> 0 </p>
+                </div>
+                <div class="Data-Tabela">
+                    <p> Menor que 24.9 </p>
+                    <p> Normal </p>
+                    <p> 0 </p>
+                </div>
+                <div class="Data-Tabela">
+                    <p> Menor que 29.9 </p>
+                    <p> Sobrepeso </p>
+                    <p> | </p>
+                </div>
+                <div class="Data-Tabela">
+                    <p> Menor que 39.9 </p>
+                    <p> Obesidade </p>
+                    <p> || </p>
+                </div>
+                <div class="Data-Tabela">
+                    <p> Menor que 40 </p>
+                    <p> Obesidade Grave </p>
+                    <p> ||| </p>
+                </div>
+                <button id="Voltar"> Voltar </button>
+            </div>
+        </div>
+</body>
+</html>
